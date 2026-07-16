@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>English Reading Trainer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <main class="app-container">
+
+    <!-- HOME SCREEN -->
+    <section id="home-screen" class="screen active">
+
+      <div class="card hero-card">
+
+        <span class="level-badge">Level A1</span>
+
+        <h1>English Reading Trainer</h1>
+
+        <p>
+          Improve your English reading skills through short stories,
+          vocabulary and interactive questions.
+        </p>
+
+        <button id="start-btn" class="primary-btn">
+          Start Lesson
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- READING SCREEN -->
+    <section id="reading-screen" class="screen">
+
+      <div class="top-bar">
+
+        <button id="reading-back-btn" class="icon-btn">
+          ←
+        </button>
+
+        <div class="progress-track">
+          <div id="reading-progress" class="progress-bar"></div>
+        </div>
+
+      </div>
+
+
+      <div class="card reading-card">
+
+        <span class="lesson-label">
+          Reading Practice
+        </span>
+
+        <h2>
+          My First Week at a New Job
+        </h2>
+
+        <div class="reading-text">
+
+          <p>
+            My name is Emily. I am twenty-four years old, and I live
+            in a small apartment with my sister. Last Monday, I started
+            a new job at a hotel.
+          </p>
+
+          <p>
+            It is my first time working in a hotel, so I was a little
+            nervous. Before this job, I worked in a small café near my
+            home. I enjoyed my old job, but I wanted to learn new skills
+            and meet new people.
+          </p>
+
+          <p>
+            Every morning, I wake up at 6:30 a.m. I take a shower,
+            get dressed, and prepare breakfast. I usually have a cup
+            of coffee, two slices of toast, and a banana.
+          </p>
+
+          <p>
+            At 7:30 a.m., I leave my apartment and walk to the bus stop.
+            The bus arrives at 7:40, and it takes about twenty-five
+            minutes to reach the hotel.
+          </p>
+
+          <p>
+            My job is at the front desk. I answer the phone, welcome
+            guests, check reservations, and give information about the
+            hotel.
+          </p>
+
+          <p>
+            At 12:30 p.m., I have my lunch break. I usually eat a
+            sandwich, some fruit, and drink a bottle of water.
+          </p>
+
+          <p>
+            I finish work at 5:00 p.m. Before I leave, I check that
+            everything is ready for the evening receptionist.
+          </p>
+
+          <p>
+            I am very happy with my new job. Every day I learn something
+            new, improve my English, and meet interesting people from
+            around the world.
+          </p>
+
+        </div>
+
+        <button id="questions-btn" class="primary-btn">
+          Start Questions
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUESTION SCREEN -->
+    <section id="question-screen" class="screen">
+
+      <div class="top-bar">
+
+        <button id="question-back-btn" class="icon-btn">
+          ←
+        </button>
+
+        <div class="progress-track">
+          <div id="question-progress" class="progress-bar"></div>
+        </div>
+
+      </div>
+
+      <div class="card question-card">
+
+        <span id="question-number" class="lesson-label"></span>
+
+        <h2 id="question-text"></h2>
+
+        <div id="answers-container" class="answers-container"></div>
+
+      </div>
+
+      <div class="bottom-actions">
+
+        <button
+          id="next-btn"
+          class="primary-btn"
+          disabled
+        >
+          Check
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESULT SCREEN -->
+    <section id="result-screen" class="screen">
+
+      <div class="card result-card">
+
+        <div class="result-icon">
+          🎉
+        </div>
+
+        <h1>Lesson Complete!</h1>
+
+        <p>Your score</p>
+
+        <div id="score-display" class="score-display">
+          0 / 10
+        </div>
+
+        <p id="result-message"></p>
+
+        <button id="restart-btn" class="primary-btn">
+          Try Again
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
